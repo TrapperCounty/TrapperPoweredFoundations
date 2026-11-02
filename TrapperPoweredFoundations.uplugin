@@ -1,0 +1,38 @@
+{
+  "FileVersion": 3,
+  "Version": 0,
+  "VersionName": "0.1.4",
+  "SemVersion": "0.1.4",
+  "FriendlyName": "Trapper\u2019s Powered Foundations",
+  "Description": "Conduct power through connected foundation edges. Machines on the floor receive power without visible cables.",
+  "Category": "Buildings",
+  "CreatedBy": "TrapperCounty",
+  "CanContainContent": true,
+  "IsBetaVersion": true,
+  "EnabledByDefault": true,
+  "GameVersion": ">=513885",
+  "Modules": [
+    {
+      "Name": "TrapperPoweredFoundations",
+      "Type": "Runtime",
+      "LoadingPhase": "PostDefault"
+    },
+    {
+      "Name": "TrapperPoweredFoundationsEditor",
+      "Type": "Editor",
+      "LoadingPhase": "PostDefault"
+    }
+  ],
+  "Plugins": [
+    {
+      "Name": "SML",
+      "Enabled": true,
+      "SemVersion": "^3.12.0"
+    },
+    {
+      "Name": "AbstractInstance",
+      "Enabled": true,
+      "BasePlugin": true
+    }
+  ]
+}

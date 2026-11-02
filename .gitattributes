@@ -1,0 +1,10 @@
+*.uasset binary
+*.umap binary
+*.png binary
+*.jpg binary
+*.md text eol=lf
+*.ps1 text eol=crlf
+Source/** -text
+Content/** -text
+Config/** -text
+*.uplugin -text

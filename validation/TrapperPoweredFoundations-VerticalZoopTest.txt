@@ -1,0 +1,85 @@
+PASS: 1m, yaw 0, up advertises vertical zoop mode
+PASS: 1m, yaw 0, up selects a four-tile vertical zoop
+PASS: 1m, yaw 0, up charges four complete recipes including material costs
+PASS: 1m, yaw 0, up constructs four actual powered foundation actors
+PASS: 1m, yaw 0, up retains all stable power components
+PASS: 1m, yaw 0, up stacks flush at the exact foundation height without horizontal drift
+PASS: 1m, yaw 0, down advertises vertical zoop mode
+PASS: 1m, yaw 0, down selects a four-tile vertical zoop
+PASS: 1m, yaw 0, down charges four complete recipes including material costs
+PASS: 1m, yaw 0, down constructs four actual powered foundation actors
+PASS: 1m, yaw 0, down retains all stable power components
+PASS: 1m, yaw 0, down stacks flush at the exact foundation height without horizontal drift
+PASS: 1m, yaw 37, up advertises vertical zoop mode
+PASS: 1m, yaw 37, up selects a four-tile vertical zoop
+PASS: 1m, yaw 37, up charges four complete recipes including material costs
+PASS: 1m, yaw 37, up constructs four actual powered foundation actors
+PASS: 1m, yaw 37, up retains all stable power components
+PASS: 1m, yaw 37, up stacks flush at the exact foundation height without horizontal drift
+PASS: 1m, yaw 37, down advertises vertical zoop mode
+PASS: 1m, yaw 37, down selects a four-tile vertical zoop
+PASS: 1m, yaw 37, down charges four complete recipes including material costs
+PASS: 1m, yaw 37, down constructs four actual powered foundation actors
+PASS: 1m, yaw 37, down retains all stable power components
+PASS: 1m, yaw 37, down stacks flush at the exact foundation height without horizontal drift
+PASS: 2m, yaw 0, up advertises vertical zoop mode
+PASS: 2m, yaw 0, up selects a four-tile vertical zoop
+PASS: 2m, yaw 0, up charges four complete recipes including material costs
+PASS: 2m, yaw 0, up constructs four actual powered foundation actors
+PASS: 2m, yaw 0, up retains all stable power components
+PASS: 2m, yaw 0, up stacks flush at the exact foundation height without horizontal drift
+PASS: 2m, yaw 0, down advertises vertical zoop mode
+PASS: 2m, yaw 0, down selects a four-tile vertical zoop
+PASS: 2m, yaw 0, down charges four complete recipes including material costs
+PASS: 2m, yaw 0, down constructs four actual powered foundation actors
+PASS: 2m, yaw 0, down retains all stable power components
+PASS: 2m, yaw 0, down stacks flush at the exact foundation height without horizontal drift
+PASS: 2m, yaw 37, up advertises vertical zoop mode
+PASS: 2m, yaw 37, up selects a four-tile vertical zoop
+PASS: 2m, yaw 37, up charges four complete recipes including material costs
+PASS: 2m, yaw 37, up constructs four actual powered foundation actors
+PASS: 2m, yaw 37, up retains all stable power components
+PASS: 2m, yaw 37, up stacks flush at the exact foundation height without horizontal drift
+PASS: 2m, yaw 37, down advertises vertical zoop mode
+PASS: 2m, yaw 37, down selects a four-tile vertical zoop
+PASS: 2m, yaw 37, down charges four complete recipes including material costs
+PASS: 2m, yaw 37, down constructs four actual powered foundation actors
+PASS: 2m, yaw 37, down retains all stable power components
+PASS: 2m, yaw 37, down stacks flush at the exact foundation height without horizontal drift
+PASS: 4m, yaw 0, up advertises vertical zoop mode
+PASS: 4m, yaw 0, up selects a four-tile vertical zoop
+PASS: 4m, yaw 0, up charges four complete recipes including material costs
+PASS: 4m, yaw 0, up constructs four actual powered foundation actors
+PASS: 4m, yaw 0, up retains all stable power components
+PASS: 4m, yaw 0, up stacks flush at the exact foundation height without horizontal drift
+PASS: 4m, yaw 0, down advertises vertical zoop mode
+PASS: 4m, yaw 0, down selects a four-tile vertical zoop
+PASS: 4m, yaw 0, down charges four complete recipes including material costs
+PASS: 4m, yaw 0, down constructs four actual powered foundation actors
+PASS: 4m, yaw 0, down retains all stable power components
+PASS: 4m, yaw 0, down stacks flush at the exact foundation height without horizontal drift
+PASS: 4m, yaw 37, up advertises vertical zoop mode
+PASS: 4m, yaw 37, up selects a four-tile vertical zoop
+PASS: 4m, yaw 37, up charges four complete recipes including material costs
+PASS: 4m, yaw 37, up constructs four actual powered foundation actors
+PASS: 4m, yaw 37, up retains all stable power components
+PASS: 4m, yaw 37, up stacks flush at the exact foundation height without horizontal drift
+PASS: 4m, yaw 37, down advertises vertical zoop mode
+PASS: 4m, yaw 37, down selects a four-tile vertical zoop
+PASS: 4m, yaw 37, down charges four complete recipes including material costs
+PASS: 4m, yaw 37, down constructs four actual powered foundation actors
+PASS: 4m, yaw 37, down retains all stable power components
+PASS: 4m, yaw 37, down stacks flush at the exact foundation height without horizontal drift
+PASS: 1m, yaw 0, up powers all stacked tiers through touching faces
+PASS: 1m, yaw 0, down powers all stacked tiers through touching faces
+PASS: 1m, yaw 37, up powers all stacked tiers through touching faces
+PASS: 1m, yaw 37, down powers all stacked tiers through touching faces
+PASS: 2m, yaw 0, up powers all stacked tiers through touching faces
+PASS: 2m, yaw 0, down powers all stacked tiers through touching faces
+PASS: 2m, yaw 37, up powers all stacked tiers through touching faces
+PASS: 2m, yaw 37, down powers all stacked tiers through touching faces
+PASS: 4m, yaw 0, up powers all stacked tiers through touching faces
+PASS: 4m, yaw 0, down powers all stacked tiers through touching faces
+PASS: 4m, yaw 37, up powers all stacked tiers through touching faces
+PASS: 4m, yaw 37, down powers all stacked tiers through touching faces
+Failures: 0

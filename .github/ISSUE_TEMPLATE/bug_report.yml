@@ -1,0 +1,105 @@
+name: Bug report
+
+description: Report a mod problem
+
+title: "[Bug]: "
+
+body:
+
+  - type: input
+
+    id: mod
+
+    attributes:
+
+      label: Mod version
+
+      placeholder: "0.1.4"
+
+    validations:
+
+      required: true
+
+  - type: input
+
+    id: game
+
+    attributes:
+
+      label: Game build and SML version
+
+      placeholder: "CL 513885, SML 3.12.0"
+
+    validations:
+
+      required: true
+
+  - type: dropdown
+
+    id: environment
+
+    attributes:
+
+      label: Play environment
+
+      options:
+
+        - Windows Steam single-player
+
+        - Windows Epic single-player
+
+        - Multiplayer host
+
+        - Multiplayer client
+
+        - Windows dedicated server
+
+        - Linux dedicated server
+
+    validations:
+
+      required: true
+
+  - type: textarea
+
+    id: reproduction
+
+    attributes:
+
+      label: Steps to reproduce
+
+      description: Include foundation height, finish, contact layout, power feed, machine type and blueprint use.
+
+    validations:
+
+      required: true
+
+  - type: textarea
+
+    id: expected
+
+    attributes:
+
+      label: Expected and actual behavior
+
+    validations:
+
+      required: true
+
+  - type: textarea
+
+    id: evidence
+
+    attributes:
+
+      label: Logs and screenshots
+
+      description: Attach relevant logs or screenshots. Remove personal information first. Saves are optional.
+
+  - type: textarea
+
+    id: othermods
+
+    attributes:
+
+      label: Other installed mods

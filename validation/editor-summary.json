@@ -1,0 +1,28 @@
+{
+  "succeeded": 3,
+  "succeededWithWarnings": 1,
+  "failed": 0,
+  "notRun": 0,
+  "tests": [
+    {
+      "testDisplayName": "SavedAssets",
+      "fullTestPath": "TrapperPoweredFoundations.Content.SavedAssets",
+      "state": "Success"
+    },
+    {
+      "testDisplayName": "Adjacency",
+      "fullTestPath": "TrapperPoweredFoundations.Geometry.Adjacency",
+      "state": "Success"
+    },
+    {
+      "testDisplayName": "MachineContact",
+      "fullTestPath": "TrapperPoweredFoundations.Geometry.MachineContact",
+      "state": "Success"
+    },
+    {
+      "testDisplayName": "StackFaces",
+      "fullTestPath": "TrapperPoweredFoundations.Geometry.StackFaces",
+      "state": "Success"
+    }
+  ]
+}

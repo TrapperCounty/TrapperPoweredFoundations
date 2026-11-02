@@ -1,0 +1,379 @@
+{
+  "mod": "TrapperPoweredFoundations",
+  "version": "0.1.4",
+  "matches_release_source_archive": true,
+  "files": [
+    {
+      "path": "Config/PluginSettings.ini",
+      "sha256": "d6d9f97113ce121b8244fe2a734c9345ba90df25fcd87cb60f4dd7c43a931d43"
+    },
+    {
+      "path": "Content/Foundations/Build_PoweredFoundation_1m.uasset",
+      "sha256": "4e1fd95de65ebeba720aa559f938a37fed1520af15d754bc8a294aecd20e30a8"
+    },
+    {
+      "path": "Content/Foundations/Build_PoweredFoundation_1m_Asphalt.uasset",
+      "sha256": "75abf97895db5a196363dd13dae782abe52004bdfa16ea23c8d66dd0cc6cc2dc"
+    },
+    {
+      "path": "Content/Foundations/Build_PoweredFoundation_1m_Concrete.uasset",
+      "sha256": "b4cc101698a521f76e11f9c6829c32c0b10dcd5162947ae2ff6778d8b6ddc1f3"
+    },
+    {
+      "path": "Content/Foundations/Build_PoweredFoundation_1m_GripMetal.uasset",
+      "sha256": "d19a07411c93eb13e3ce53f3cc85610fbad9fee90012329e8d9c3e608a093a26"
+    },
+    {
+      "path": "Content/Foundations/Build_PoweredFoundation_1m_PolishedConcrete.uasset",
+      "sha256": "4b44a17b339d13d3d5067003da10195ffa7ba30872a472273dd99559e88ffc41"
+    },
+    {
+      "path": "Content/Foundations/Build_PoweredFoundation_2m.uasset",
+      "sha256": "ab11eb52f7fa78f37306d10a0b064cd44634a8e29f465238824b3d7a762ae19f"
+    },
+    {
+      "path": "Content/Foundations/Build_PoweredFoundation_2m_Asphalt.uasset",
+      "sha256": "34ead2fd2fc895fbc49b44fcb0c24008bd26b825132e3ee51b25ff480b2257f7"
+    },
+    {
+      "path": "Content/Foundations/Build_PoweredFoundation_2m_Concrete.uasset",
+      "sha256": "9baf6fccf522143db80c573b150b62505724a2480b7edf7616bc3bb302b0df34"
+    },
+    {
+      "path": "Content/Foundations/Build_PoweredFoundation_2m_GripMetal.uasset",
+      "sha256": "c658fc7c01c489f702f6fdd5c70c0b51aa95868a2b7156c58e3206a58e8f2e18"
+    },
+    {
+      "path": "Content/Foundations/Build_PoweredFoundation_2m_PolishedConcrete.uasset",
+      "sha256": "6bf337de8e7a7de5e3dc6ae420969b113596a46bcee72d3a03ec57559ab0ce2f"
+    },
+    {
+      "path": "Content/Foundations/Build_PoweredFoundation_4m.uasset",
+      "sha256": "c5a55a0e2caa9a7f5db63b5197f57c3810bd6d7fa63479ebabbd2c708caf49d7"
+    },
+    {
+      "path": "Content/Foundations/Build_PoweredFoundation_4m_Asphalt.uasset",
+      "sha256": "d893118299bcec64e5b5f02102cf0ae43f295920fdbdd1be85b40a69f7f0b936"
+    },
+    {
+      "path": "Content/Foundations/Build_PoweredFoundation_4m_Concrete.uasset",
+      "sha256": "83afa30079ff189eb2a3d97767352f4f150d58157f953f383b510ff286f4fe7c"
+    },
+    {
+      "path": "Content/Foundations/Build_PoweredFoundation_4m_GripMetal.uasset",
+      "sha256": "a0617bc765ab5b226ea3707f16d077c1c15c457741cedae6fe2e2e15232bb957"
+    },
+    {
+      "path": "Content/Foundations/Build_PoweredFoundation_4m_PolishedConcrete.uasset",
+      "sha256": "d7e077b91e6adf668806e8afc961a2772c387998e5bcfd00a61372e9f57ee485"
+    },
+    {
+      "path": "Content/Foundations/Desc_PoweredFoundation_1m.uasset",
+      "sha256": "92acb2dea19a8ef46e99cc5425f51bf0600e8007902dc831c552b9fd8af81642"
+    },
+    {
+      "path": "Content/Foundations/Desc_PoweredFoundation_1m_Asphalt.uasset",
+      "sha256": "3f59cf94432bd7bd2b906643406c2ac258a3d692bcee2b50c3af7e2192d5c129"
+    },
+    {
+      "path": "Content/Foundations/Desc_PoweredFoundation_1m_Concrete.uasset",
+      "sha256": "8cb012455bd8b80f7e777e8ced261bd90d0d15fe0696850a663010d92ca10334"
+    },
+    {
+      "path": "Content/Foundations/Desc_PoweredFoundation_1m_GripMetal.uasset",
+      "sha256": "d55583b5ae1fbaabee079d41222e3462813e9762c3dc93f217d098e29e9cbd58"
+    },
+    {
+      "path": "Content/Foundations/Desc_PoweredFoundation_1m_PolishedConcrete.uasset",
+      "sha256": "c458943af3ae57fcb2b74726fe6c29a28da13b3a7952b3f816b12af050c8f53b"
+    },
+    {
+      "path": "Content/Foundations/Desc_PoweredFoundation_2m.uasset",
+      "sha256": "f8d6fe026b64d5e1361df5e180655b2230873c953ba92c01ae508fe0f3400e50"
+    },
+    {
+      "path": "Content/Foundations/Desc_PoweredFoundation_2m_Asphalt.uasset",
+      "sha256": "8d764c87deca3cdb8ec79c2e5dc51d8327771ce9b1f20db3276854099f1a7b69"
+    },
+    {
+      "path": "Content/Foundations/Desc_PoweredFoundation_2m_Concrete.uasset",
+      "sha256": "33d7008c8a2742acad63f063a1187025b614bc131cd9175e65a18cee08bc602f"
+    },
+    {
+      "path": "Content/Foundations/Desc_PoweredFoundation_2m_GripMetal.uasset",
+      "sha256": "ba728c91dded40680dbea88f7f47ec32e1a3dda9087f20441c6b15fd0fec9c8d"
+    },
+    {
+      "path": "Content/Foundations/Desc_PoweredFoundation_2m_PolishedConcrete.uasset",
+      "sha256": "f83033bcbba176f260734c9a934bc3c16492f85bee8c9808b4958324d2c44b78"
+    },
+    {
+      "path": "Content/Foundations/Desc_PoweredFoundation_4m.uasset",
+      "sha256": "eb5f956f9a4d5e6c41b70768a77723ee98b50fcd17e8874e793a8718242b7b86"
+    },
+    {
+      "path": "Content/Foundations/Desc_PoweredFoundation_4m_Asphalt.uasset",
+      "sha256": "91576cd747151eadbfb6edd64b139ba9efd1e5db3722ebef07c4a8c2f0838f0b"
+    },
+    {
+      "path": "Content/Foundations/Desc_PoweredFoundation_4m_Concrete.uasset",
+      "sha256": "6a34f91b20b1b862f2a213272b880eae3e4240cbd1df02fc1abfaceafe1812ce"
+    },
+    {
+      "path": "Content/Foundations/Desc_PoweredFoundation_4m_GripMetal.uasset",
+      "sha256": "1fdf040b9f3bd2c0836209b0ac61e5c84879b3ae99b9c01936cef6d2d477679a"
+    },
+    {
+      "path": "Content/Foundations/Desc_PoweredFoundation_4m_PolishedConcrete.uasset",
+      "sha256": "c12274e0201e9fc1e7d042eda3dab7e9f76eeac2393f191f6d18b705ad08d8a5"
+    },
+    {
+      "path": "Content/Materials/M_PowerStatus.uasset",
+      "sha256": "6e119adf291f61f08dd824f75d9619cd701b35ff03bb71b350fb6f6844f2ab68"
+    },
+    {
+      "path": "Content/Materials/SM_PowerCorners.uasset",
+      "sha256": "00667cc0f01bd9d1133fb8885f6c4138951c3e3d3def08c671d762eadfc2a19e"
+    },
+    {
+      "path": "Content/Recipes/Recipe_PoweredFoundation_1m.uasset",
+      "sha256": "2b67ff5fbcf1bda7a65d6c43e7fbebb352046dc876abb66ffc760175b6629b6c"
+    },
+    {
+      "path": "Content/Recipes/Recipe_PoweredFoundation_1m_Asphalt.uasset",
+      "sha256": "76d76c78c15cf16e69ab203b6fe7a13d71eb9c4d51a80cda00a53c1bba714f4d"
+    },
+    {
+      "path": "Content/Recipes/Recipe_PoweredFoundation_1m_Concrete.uasset",
+      "sha256": "a4869c311e8a1ef10cc7c9fb967974f14debbed5549b3814c49346132562052c"
+    },
+    {
+      "path": "Content/Recipes/Recipe_PoweredFoundation_1m_GripMetal.uasset",
+      "sha256": "0c98be522392622ef40268c64ac0371a490663170a8c3ecece6172303fc7251b"
+    },
+    {
+      "path": "Content/Recipes/Recipe_PoweredFoundation_1m_PolishedConcrete.uasset",
+      "sha256": "677aea2d388b35a1be21c0448741f01431bc78c0539ca99f5c56aee875cefa67"
+    },
+    {
+      "path": "Content/Recipes/Recipe_PoweredFoundation_2m.uasset",
+      "sha256": "79e9ccbfd34ee3c11dbb1ee155c3d416aff8deacd9db72c99ef0f9781bc84dc9"
+    },
+    {
+      "path": "Content/Recipes/Recipe_PoweredFoundation_2m_Asphalt.uasset",
+      "sha256": "3a64f32f8e60089e7ee6eb7beb1b999360f4e4a55a27a0e013af851cebcf9a96"
+    },
+    {
+      "path": "Content/Recipes/Recipe_PoweredFoundation_2m_Concrete.uasset",
+      "sha256": "ecce030c2d6e36380dce13b63d6221b5efec43665c549203c060accd9464ce73"
+    },
+    {
+      "path": "Content/Recipes/Recipe_PoweredFoundation_2m_GripMetal.uasset",
+      "sha256": "e588d4a7e517bd387ed439cbf64658fa916822212cff52705ec383caa5efce4b"
+    },
+    {
+      "path": "Content/Recipes/Recipe_PoweredFoundation_2m_PolishedConcrete.uasset",
+      "sha256": "b7606f880c5f5129c235aee0dc9d1c84fb848ead961bdbc09e547983aef3522e"
+    },
+    {
+      "path": "Content/Recipes/Recipe_PoweredFoundation_4m.uasset",
+      "sha256": "d5d916a2dedb7d36078cdd106b99fd7c08680353671488f936c4dabdc22dc80e"
+    },
+    {
+      "path": "Content/Recipes/Recipe_PoweredFoundation_4m_Asphalt.uasset",
+      "sha256": "42efbe3ef757a7f15ba914124310d7018fb30283bca777a8f49c1392fa14074b"
+    },
+    {
+      "path": "Content/Recipes/Recipe_PoweredFoundation_4m_Concrete.uasset",
+      "sha256": "6d9a53cbce71fcd79b1b2dd921386512ec8a3522c237aee9102ee3899520eecd"
+    },
+    {
+      "path": "Content/Recipes/Recipe_PoweredFoundation_4m_GripMetal.uasset",
+      "sha256": "1ef29cd4ab740e88dac9c7511a0e1bfc6d710a8c3080c8cd680ed1ab80943b61"
+    },
+    {
+      "path": "Content/Recipes/Recipe_PoweredFoundation_4m_PolishedConcrete.uasset",
+      "sha256": "ee18db03f875574a4b75535ad4e4e01eda0d0e446ad874cefcb66ded7fbec20a"
+    },
+    {
+      "path": "Content/RootGameWorld_PoweredFoundations.uasset",
+      "sha256": "4b382eebaae31c48a67850701765dfb53c882ff85fb9f171c46beddf128dddf0"
+    },
+    {
+      "path": "Content/Schematics/Schematic_PoweredFoundations.uasset",
+      "sha256": "792f0aea7ff730c5889568e9ec2a47b923cf64d766ceec69932e6f5ecea47c99"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/PFGameWorldModule.cpp",
+      "sha256": "e6038828b583531d6410a4eaa879de5d99daffe113c18ce36dc913fd9ffef8c8"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/PFGeometry.cpp",
+      "sha256": "977bf789cd30d814d2c83f3381ac29c9b6ed92755118dc905557c671fba94708"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/PFNetworkSubsystem.cpp",
+      "sha256": "b9c3cfaa344fdfe47240bdc71a397a62bd23ef7455b6d35cade1f3e91b1bc34a"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/PFPowerConnection.cpp",
+      "sha256": "3b017f8ea3f161d02aee761a68de1496e1462a215e302c56ee3a1001471c1c62"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFAlignmentTest.cpp",
+      "sha256": "7f31445483f895795bb5552c2098aa0d8133ff4c0073c747e356cf769b8b3edd"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFBlueprintDismantleTest.inl",
+      "sha256": "de247d3e13235e22b64862909760f13c33791a2e6f894a3b801741dae80fdc19"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFBlueprintMultiOverflowTest.inl",
+      "sha256": "b8d8439b07ffdf3874c354bac1bd79abe0206528c5c7aa0cc0eb3e2e6fcc7f7b"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFBlueprintMultiPartialTest.inl",
+      "sha256": "bba761a6977766b5f812a3750648de6e95f448e510874a45068008d2df04331f"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFBlueprintOverflowTest.inl",
+      "sha256": "b57aa32d96890775bf51216cbe744276a4433e67dc8e63e03993c6ec1cac814c"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFBlueprintPartialTest.inl",
+      "sha256": "85048e9a1b9df13d19f59c3f31b22563c1eba4707f1cfa4265515bae504fddcf"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFBlueprintTest.cpp",
+      "sha256": "d56b9ea93bb0536c5574d19fc8702634ee0f1c60b5579dbf9130196474091d99"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFCustomizationTest.inl",
+      "sha256": "b88501a69c20c9d54a780193438faf019debfffbaa5ccc3720f7835825a47e23"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFDenseBlueprintTest.inl",
+      "sha256": "9a424f959eabfff20204f271a4da718ae6ab7600375830fbd7a4b9612f0e6f69"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFExtendedTest.inl",
+      "sha256": "b98770317d9bd2d56203c743087b2beb7a506acfd777dee5ba872f77ec6f2e5f"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFGeometryTests.cpp",
+      "sha256": "a6538b3b6d04e11251dc0f1a8c809952fa9782aedb752a8186c0c371e88b9ec7"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFIntegrationTest.cpp",
+      "sha256": "b95280f73dba6361d7ff79321e25a075c19fb20a9af75d07f8bd1d0c1fa2be8f"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFLargeBlueprintTest.inl",
+      "sha256": "11bca74562ff780aab23d68b0cb61d1ebcadf80c673ee87fcf14b184029f9d42"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFMaxOverflowTest.cpp",
+      "sha256": "e5ecc755eefb10cae84837e69a4fc21cfb60ee70141cd44e2697d61f83c061ba"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFMixedRefundTest.cpp",
+      "sha256": "7589c5af36126f16a64995f4b65fe27693e8f731aa749ef5e5162b42704ea19f"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFMultiplayerClientTest.cpp",
+      "sha256": "826c672e4a42ab727cf23bd12f28da2a0b4454780299dae95e3f1be9a4206f70"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFMultiplayerJoinTest.cpp",
+      "sha256": "0d0c22673cb39ad0a45c64606e5a0cfd197c645f67fc53584b2f04df98aca88a"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFMultiplayerTest.inl",
+      "sha256": "58b83e0caf9d4687f5203e0fb2d9509e176868bbad542a35937dc6029eec5a80"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFPartialPersistenceTest.cpp",
+      "sha256": "b7ccdf9a16ee7250d4f7289f1e15226b40833706fd7db97711e652df09c17f59"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFPlacementTest.cpp",
+      "sha256": "9a311ed86575f1e6d1cb40fdde4295bd890f598eb4d14c9788583419f6b9f532"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFPrivateMigrationTest.cpp",
+      "sha256": "3027476ab096c2228f6c5c7e5f7993e29263da40075d69978fe0dc30b3d855de"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFSideOutletTest.inl",
+      "sha256": "b7c6fc1f5cf69f3068d65238c8d118a3b2cc1614a84b3ff0cd331bf1000fd7bf"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFSnappedBlueprintTest.inl",
+      "sha256": "b9dcc0ef63c1df530ccba5e186652ff52675161f9c02c646deb757c0463a1f1f"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFStackPowerTest.inl",
+      "sha256": "7d34f8e4766f86784cc37ae7c1994bcb8355ad05bd815d61b286354d25a1b517"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/Tests/PFVerticalZoopTest.cpp",
+      "sha256": "28785d9039254a8712569c09aad0e09e3d8bc37f565c2119d854be4579e7a7b2"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Private/TrapperPoweredFoundations.cpp",
+      "sha256": "d2fba5903c2de644c78b346e0fa4ffbf9787a2407943e1388414b29fe2e3c113"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Public/PFFoundationMesh.h",
+      "sha256": "a679072265e9862cfadcc8910e0e0727b672695c9504a8cfc38766ec205c5012"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Public/PFGameWorldModule.h",
+      "sha256": "201696c201492e1444730d1a41450199993612ccf5d92e33fdc3c4047c3676e2"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Public/PFGeometry.h",
+      "sha256": "33ea9f2b7d2c97fe6e94e495ab027708c07157f72138059afa28df4fd7794a60"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Public/PFNetworkSubsystem.h",
+      "sha256": "46cedcaa638b1cd35b993b71ef832edef7262155d1920eb53a737d59f60ed27e"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/Public/PFPowerConnection.h",
+      "sha256": "bd5b96855c9fa8f08bb1565f1f78de20110283494b81ed43bccccc2e97044b0a"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundations/TrapperPoweredFoundations.Build.cs",
+      "sha256": "8e638cc111a1eacee9df978248b60f7ba3c13b8d037923375740af99f4689495"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundationsEditor/Private/PFContentTests.cpp",
+      "sha256": "fee4b990b20f4b8bf6014f029e9ad8ae670a5f5cdff7f63936e548ea005e80d4"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundationsEditor/Private/PFCornerAssets.inl",
+      "sha256": "62a257c5ac9303848406cda0a6bdaf2a67395a125710a7d486d5463f118f24c2"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundationsEditor/Private/PFGenerateAssetsCommandlet.cpp",
+      "sha256": "e091515bc8642cf46285c832a3b1da00be1aa205f899bc6a0ec441bbb735b9fb"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundationsEditor/Private/TrapperPoweredFoundationsEditor.cpp",
+      "sha256": "01c0b6dc618adf8e9b274b4b47cde3c62bc8a6e6c809a0e024b2c18d805aff0b"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundationsEditor/Public/PFGenerateAssetsCommandlet.h",
+      "sha256": "af26810dc693fbc555949df65f782665768d39d20ce547666c51548be10a8265"
+    },
+    {
+      "path": "Source/TrapperPoweredFoundationsEditor/TrapperPoweredFoundationsEditor.Build.cs",
+      "sha256": "7bdede197b2069282e35eeb835d2cab72c18d706e1a54873220688c0e9460d50"
+    },
+    {
+      "path": "TrapperPoweredFoundations.uplugin",
+      "sha256": "e286d441066899d46100f2272b6a920159ae4cd0f8fac8a7890f75a467f0fa30"
+    }
+  ]
+}

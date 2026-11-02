@@ -1,0 +1,587 @@
+Historical report, with private save identifiers and workstation paths redacted. Publication status statements below describe the original test date.
+
+Trapper's Powered Foundations 0.1.4 - stacking fix verification
+Date: 2026-10-28
+Platform: Windows Steam, Satisfactory CL 513885, SML 3.12.0
+
+Directly touching top/bottom faces now conduct power. Uses actual oriented
+footprint overlap; corners, gaps and intersecting volumes do not qualify.
+Side contact and Designer membership boundaries are retained.
+Four editor suites passed, including all mixed-height/rotated face cases.
+Live tests cover five finishes, mixed-height columns, top-floor branches and
+machines, corner indicators, two-centimeter gaps, corner-only contact,
+middle-block removal/replacement, fresh-process save reload, and native
+up/down vertical zoops at 0 and 37 degrees for all three foundation heights.
+TPF-StackTest.txt: 332 checks passed, zero failures.
+TPF-StackReloadTest.txt: 317 checks passed, zero failures.
+TrapperPoweredFoundations-VerticalZoopTest.txt: 84 checks passed, zero failures.
+
+The first new test runner crashed before saving because it cleared its timer
+before retaining its shared owner. Fixed in the opt-in QA runner; the repeated
+test and fresh reload completed successfully. This is not normal-game code.
+
+Latest user progress saved and backed up as <private-save>
+Original inventory was unchanged in both stacking sessions. Separate fixtures
+and evidence saves were used; normal factory save is retained.
+0.1.4 multiplayer/server/Epic gameplay and dense Designer suites were not rerun.
+Windows server and Epic targets were built, not marked gameplay-validated.
+Ficsit.app publication has been blocked by its S3 CopyObject signature error.
+Historical validation below is from earlier versions, not fresh 0.1.4 coverage.
+
+Trapper's Powered Foundations 0.1.3 public beta - release identity validation
+Date: 2026-10-28
+Public reference: TrapperPoweredFoundations; author: TrapperCounty
+Public page: https://ficsit.app/mod/BcMWh4bEEEF62
+
+Original private PoweredFoundations identity belongs to a different public author.
+Never upload the old private archives. Normal play installs no global redirects.
+Opt-in private save migration: -TPFMigratePrivateSave only.
+Verified migration and fresh-process reload retained all 73 actor identities,
+classes, positions, rotations, scales, finishes, shop purchase and exact inventory.
+User original save retained: <private-save> (backup in Publish/0.1.3).
+Verified migrated normal save: <private-save>
+Final renamed package: 962 native Customizer checks passed, zero failures;
+all 60 directed finish changes, power continuity and exact inventory restoration.
+Three renamed editor suites passed. Official merged Windows/WindowsServer ZIP
+passed integrity and identity/dependency inspection. Epic binaries built only.
+0.1.3 remote multiplayer/Epic gameplay, Linux, controllers, Experimental and
+third-party Customizer materials are NOT verified. Historical results below
+predate the public identity migration and are not fresh multiplayer coverage.
+
+Powered Foundations 0.1.3 beta - local verification
+Date: 2026-10-28
+Platform: Windows Steam, Satisfactory 1.2.4.1 / CL 513885, SML 3.12.0
+
+0.1.3 corner indicators and native Customizer finishes:
+- Four compact L-shaped corner emitters per tile, with independent material.
+  Green means energized; red means unpowered or fuse tripped.
+- Fifteen powered assets: FICSIT, Concrete, Coated Concrete, Asphalt and
+  Grip Metal, each at 1m/2m/4m. Original three asset paths are preserved.
+- Native material descriptors receive 60 explicit powered-to-powered recipe
+  mappings and powered source eligibility. Vanilla mappings are unchanged.
+- All 3 editor suites passed after regeneration and final C++ edits.
+- Packaged Windows and WindowsServer builds succeeded.
+- Native equipped/aimed Customizer: 962 checks passed, zero failures, covering
+  all 60 directed finish changes. Verifies target powered class, mesh and
+  material overrides, height/side contact, circuit continuity, red/green
+  colors, native save and exact original inventory restoration.
+- Fresh-process save reload: 841 checks passed, zero failures, covering all
+  60 saved outcomes, recreated indicators, native circuit reconnection and
+  feed-loss behavior; every original inventory slot restored.
+- Initial direct-paint test and first camera-aim attempt were invalid test
+  setups (paint was not applied). Corrected by equipping/aiming the native
+  Customizer and providing the correct Cement descriptor. They are retained
+  as diagnostic evidence and are not counted as passes.
+Mixed-finish Blueprint Designer save: 20 checks passed.
+Fresh-process placement at 0 and 37 degrees: 44 checks passed.
+Both runs had zero failures and unchanged player inventory. Saved finishes,
+recipe costs, power to floors/machines, independent copies, green corner
+indicators and feed disconnection were verified with native game handlers.
+Total new packaged gameplay checks: 1867, zero failures.
+
+0.1.3 limits: host-side Windows gameplay tested. The matching WindowsServer
+package compiled, but this update has not repeated the prior six-phase real
+client/server test. WAN/multiple clients, every finish with every wall outlet,
+and third-party Customizer materials remain unverified. Prior-version results
+below are retained as historical coverage, not new 0.1.3 test runs.
+Evidence directory: <modding-root>/Setup/Customization-20261028
+The tests use isolated fixtures and synthetic native power production.
+Original <private-save> and inventory are preserved; SHA256:
+B5F00CC8AA26604DFB8652DD2F1AE446B57C6CA95AEB8F0E12DAA8AE5C891CB6
+
+0.1.2 direct-side wall outlet correction:
+The user reported that an outlet mounted directly on a foundation side did
+not conduct through that foundation. The old mount resolver recognized only
+separate wall actors/lightweight walls. It now resolves actor-backed instanced
+collision to the owning powered foundation and accepts side-face contact.
+Designer boundaries and existing separate-wall support are retained.
+Opt-in -PFOutletDiagnostics records mounting surfaces and supported tile counts.
+
+PASS: All three editor suites (saved assets, adjacency, machine contact).
+PASS: Windows client and WindowsServer 0.1.2 packages built.
+PASS: 715 packaged-client checks in <private-save>:
+      72 direct-side cases: all six single/double Mk.1/Mk.2/Mk.3 outlets,
+      1m/2m/4m floors, four sides, yaw 0/37 degrees;
+      every outlet terminal attaches, outlet feeds floor and neighboring
+      machine, cable loss removes power, and floor can feed outlet in reverse;
+      removing support detaches and depowers outlet while independently fed
+      neighboring machinery stays powered.
+      12 controls (150cm air gap / above the top) remain unconnected.
+      Six separate-wall cases still supply the floor and detach on wall removal.
+      Every original inventory slot remained identical; temporary fixtures
+      were removed. Autosaves were disabled for the disposable QA session.
+      Tests use native cables/circuits with synthetic QA power production;
+      they do not claim automated manual placement of every fixture.
+PASS: Diagnostic output on loading the user's existing save recognizes the
+      saved Mk.3 outlet at (-22830,282900,-2500) as directly supported by a
+      powered 2m foundation, without rebuilding the outlet.
+PASS: Original <private-save> save remains byte-identical to the backup:
+      41B31229FA1AA4E751E98FC7F04CBB0B1334BF3CA656038E7FCD0B0B2930058D.
+      Installed client matches all seven archive files.
+
+Report: powered-foundations-side-outlet-test.txt.
+This focused correction does not rerun the complete historical blueprint,
+refund, soak or multiplayer matrix. Dedicated-server package compilation is
+verified, but direct-side outlet behavior was tested in the local client.
+The prior wall-outlet tests below exercised separate walls, so they missed
+the user's direct-on-foundation placement. Historical results follow.
+
+-----------------------------------------------------------------------
+Powered Foundations 0.1.1 beta - local verification
+Date: 2026-10-27
+Platform: Windows Steam, Satisfactory 1.2.4.1 / CL 513885, SML 3.12.0
+Engine: Unreal 5.6.1-CSS, release 5.6.1-css-83
+
+0.1.1 alignment and collision regression:
+The user reported misaligned foundation surfaces and walking inside their
+visible geometry. The explicit FICSIT mesh lacked the vanilla instance's
+relative Z offset (-50/-100/-200cm for 1m/2m/4m). Snap origins and centered
+box collision were correct, but the rendered model sat half a height too high.
+The asset generator now copies the matching vanilla mesh instance transform.
+No actor transform, collision size, recipe, refund or power behavior changed.
+
+PASS: New editor comparisons failed on all three original assets, then passed
+      after regeneration. All three editor automation suites passed.
+PASS: Windows client and WindowsServer 0.1.1 packages built successfully.
+PASS: 28 packaged-client checks in a copy of the user's current Trapper save:
+      all 11 existing powered foundations loaded with corrected transforms;
+      all three native holograms and constructed models matched vanilla;
+      actual shipped mesh bounds matched vanilla; real vanilla lightweight
+      neighbors had flush rendered top and bottom surfaces; player-sized
+      capsule sweeps landed on the correct collision surface at the center
+      and four edges of each height (15 locations total).
+      Temporary fixtures were removed. The harness did not move the player,
+      modify inventory, or write the loaded save. Both saved-file SHA256s
+      remained 3B78FDADE59C300C6763DB625A955D3766DACCCC4941048087A6FFB138DE2CC1.
+      Source save: <private-save>; test copy: <private-save>
+      Report: powered-foundations-alignment-test.txt.
+
+These are native geometry/construction/collision checks, not automated human
+walking input. The earlier visual checks below missed this offset; their
+scope did not compare rendered surfaces with vanilla instance transforms.
+The earlier broad 0.1.0 results are retained below as historical coverage;
+the full soak, refund, Blueprint Designer and network matrix was not rerun
+for this mesh-only correction. Previously misplaced tiles that were manually
+offset to compensate for the old appearance may need rebuilding.
+
+Historical 0.1.0 verification:
+
+PASS: Editor C++ build, generated Blueprint/material content, Shipping package,
+      and installation into the local Steam game.
+PASS: All three editor automation suites (2 clean, 1 with SDK placeholder
+      asset warnings, 0 failures): geometry adjacency, machine contact,
+      saved assets/recipes/unlock/component settings.
+PASS: 21 packaged-game checks, including the separate save operation.
+      Solid floor collision; all three thicknesses connected; Mk.1/2/3 poles;
+      smelter and large assembler contact; wall outlet attachment/removal;
+      diagonal isolation; energized state; middle-tile removal and replacement;
+      two external feeds merging, surviving one feed removal, and losing power
+      after both feeds are removed.
+PASS: Visual inspection of the explicit foundation bodies and cyan rim in the
+      packaged game. Test camera and fixtures removed themselves afterward.
+
+Tested using the existing <private-save> factory. The original manual
+save was not overwritten. A separate PF_Validation_20261027_081411 save holds
+the persistence fixture above the map; use the original save for ordinary play.
+
+PASS: Four persistence checks after restarting the game and loading that save:
+      all four foundation actors and their power components survived, connected
+      floor links rebuilt, diagonal isolation survived, and machine attachment
+      survived. Zero failures.
+
+Evidence:
+  <modding-root>\Setup\powered-foundations-full-build.log
+  <modding-root>\Setup\PoweredFoundationsTestResults\index.json
+  <modding-root>\Setup\powered-foundations-integration.txt
+  <modding-root>\Setup\powered-foundations-reload.txt
+  <modding-root>\Setup\powered-foundations-shop-build-test.txt
+  <modding-root>\Setup\powered-foundations-placement-test.txt
+  <modding-root>\Setup\powered-foundations-vertical-zoop-test.txt
+  <modding-root>\Setup\powered-foundations-mixed-refund-test.txt
+  <modding-root>\Setup\powered-foundations-mixed-refund-inventory.txt
+  <modding-root>\Setup\powered-foundations-max-overflow-test.txt
+  <modding-root>\Setup\powered-foundations-max-overflow-details.txt
+  <modding-root>\Setup\powered-foundations-partial-refund-test.txt
+  <modding-root>\Setup\powered-foundations-partial-refund-reload-test.txt
+  <modding-root>\Setup\powered-foundations-partial-persistence-manifest.txt
+  <modding-root>\Setup\powered-foundations-blueprint-designer-test.txt
+  <modding-root>\Setup\powered-foundations-blueprint-place-test.txt
+  <modding-root>\Setup\powered-foundations-blueprint-details.txt
+  <modding-root>\Setup\powered-foundations-blueprint-full-build.log
+  <modding-root>\Setup\powered-foundations-blueprint-regression-test.txt
+  <modding-root>\Setup\powered-foundations-large-blueprint-test.txt
+  <modding-root>\Setup\powered-foundations-large-blueprint-reload-test.txt
+  <modding-root>\Setup\powered-foundations-large-blueprint-manifest.txt
+
+PASS: Manual AWESOME Shop checkout in the existing Trapper game. Only Powered
+      Foundations was in the cart; 25 coupons were deducted (146 -> 121), and
+      the listing changed to Purchased.
+PASS: All three recipes appeared in the build menu. Each size was placed using
+      the normal build gun; costs were 5 concrete + 2 iron plates each, plus
+      2 / 6 / 12 wire. All three mod actors and their power components appeared
+      in the subsequent autosave. Duplicate placement was rejected.
+
+PASS: 90 focused native-hologram checks in the packaged game on 2026-10-27.
+      All four side faces of 1m/2m/4m powered anchors are targetable by the
+      build-gun trace and snap at exactly 8m spacing, at 0 and 37 degrees.
+      Four-tile horizontal zoops construct four actual powered actors, preserve
+      each power component, maintain 8m spacing, and form one powered circuit
+      when one tile is supplied. Complete hologram costs, including FICSIT
+      material iron plates, scale by four. Fixtures clean themselves up.
+      These tests use the game's real recipe-created holograms and native
+      construction methods; they do not test mouse/keyboard mode selection,
+      deduct player inventory, or prove remote-client prediction behavior.
+      Initial test expectations were corrected for passive circuit allocation
+      and the material surcharge. No gameplay change was required.
+
+PASS: 84 native vertical-zoop checks on 2026-10-27. Four-tile stacks were
+      constructed upward and downward for 1m/2m/4m foundations at 0 and
+      37 degrees. Counts, full material costs, stable power components,
+      rotations, and exact 1m/2m/4m height spacing all passed, with no XY drift.
+      Connecting a test source terminal to one tier powered only that tier;
+      the other three had no power and no hidden links to the fed tier.
+      Test fixtures were removed and no player materials were deducted.
+      The initial test feed was corrected to establish a native circuit through
+      a second terminal. No gameplay fix was required. This exercises native
+      hologram/zoop code, not UI mode selection or a new save/reload cycle.
+
+PASS: 185 native mixed-height/refund checks on 2026-10-27, zero failures.
+      All six ordered 1m/2m/4m height pairings on four side faces at 0 and
+      37 degrees match vanilla hologram alignment, maintain 8m XY spacing,
+      and have overlapping side contact. Twelve constructed pairs conduct power.
+      Native dismantling of one tile per size returns the complete cost:
+      5 concrete + 2 iron plates each, plus 2/6/12 wire for 1m/2m/4m.
+      The actual server handler delivered 15 concrete, 6 iron plates, and
+      20 wire to player inventory. Those test-only refunds were removed,
+      restoring original totals (2963 concrete, 992 iron plates, 296 wire).
+      All three targets were dismantled; remaining temporary tiles were removed.
+      No-build-cost refund queries returned no free materials. The latest
+      Trapper autosave was backed up before testing. No gameplay fix required.
+      This covers native snapping and server dismantling, not manual UI
+      selection, inventory overflow crates, or remote-client behavior.
+
+PASS: 301 native maximum-zoop/full-inventory refund checks on 2026-10-27.
+      Zero failures. All 36 cases (three sizes, two rotations, six signed axis
+      directions) use vanilla's configured extension of nine plus the initial
+      tile: ten foundations total. Requests five beyond that limit also clamp
+      to ten, matching vanilla. Actual construction creates ten actors per case
+      with correct complete cost, spacing, rotation, and stable power components.
+      All ten horizontal tiles conduct; only the fed tier powers vertically.
+      Full-inventory testing filled every slot and left no capacity for even one
+      refund ingredient. Native dismantling of one tile of each size created
+      one dismantle crate with exactly 15 concrete, 6 iron plates, and 20 wire.
+      Original slots/counts were restored immediately after the request.
+      The native inventory transfer collected all refunds; test-only refunds
+      were removed and original material totals restored. Remaining fixtures
+      and the empty test crate were removed. No gameplay fix was required.
+      This tests native hologram/server/transfer behavior, not manual UI input,
+      remote clients, partial overflow, or persistence of an uncollected crate.
+
+PASS: 21 partial-overflow/save checks plus 14 checks after a full process
+      restart and reload on 2026-10-27. Zero failures. One tile per size was
+      dismantled with precisely constrained inventory capacity. Quantities
+      (concrete, iron plates, wire) split as follows:
+        1m: inventory (2,0,1), crate (3,2,1).
+        2m: inventory (5,1,2), crate (0,1,4).
+        4m: inventory (0,2,5), crate (5,0,7).
+      Every ingredient was conserved. Temporary filler and inventory refunds
+      were removed by slot, restoring original item placement and counts.
+      Separate save PF_PartialRefund_20261027_111114 retained all three crates.
+      After restarting and loading it, every crate identity occurred exactly
+      once; type, position and contents were unchanged. All saved refunds
+      remained collectible via native transfer. Original inventory slots and
+      totals were restored, and runtime test crates cleaned up afterward.
+      The separate save and manifest are retained as evidence. No gameplay
+      fix required. These checks exercise native server/save/transfer code,
+      not manual UI item collection or remote-client behavior.
+
+PASS: 20 Blueprint Designer checks and 32 fresh-process blueprint placement
+      checks on 2026-10-27. A real Mk.1 Designer registers three mixed-height
+      powered tiles, a pole and a foundry, forms hidden floor/consumer links,
+      calculates complete costs, and saves .sbp/.sbpcfg files. After restart,
+      native blueprint previews and copies at 0/37 degrees retain all five
+      buildings, stable power components, mixed-height side contact and costs.
+      External cables energize every floor and the foundry without a separate
+      machine cable. Rims respond, copies remain electrically separate, and
+      removing each feed turns its floor and machine off. Inventory unchanged.
+      Fixed an actual discovery bug: Designer contents bypass the normal
+      factory buildable list. The network now reads Designer membership lists
+      and subscribes to their change event; same-Designer isolation is retained.
+      Test assumptions were separately corrected: a machine may attach to any
+      overlapping support tile; Recipe_SmelterMk1 resolves to Build_FoundryMk1
+      in this game build; native preview initialization must be called explicitly.
+      The initial Designer report labels the foundry as a smelter; class identity
+      is recorded in the placement diagnostics. All three editor suites passed
+      again (2 clean, 1 SDK placeholder warning suite, zero failures).
+      Blueprint retained: Powered Foundations Test 20261027_120211.
+      This covers native Designer/save/preview/construction methods, not manual
+      menu interaction, Mk.2/Mk.3 Designer limits, nested blueprints, or remote
+      multiplayer placement. Runtime test structures were removed.
+      After the discovery fix, all 20 baseline packaged-game power-network
+      checks passed again, including split/rejoin, machine support, multiple
+      feeds, pole variants, wall outlets, and energized states. No new save
+      was requested during this baseline regression run.
+
+PASS: 73 larger-Designer/save checks and 83 fresh-process placed-blueprint
+      reload checks on 2026-10-27. Zero failures. Mk.2 has native dimensions
+      5x5x5 and Mk.3 6x6x6 (8m units). Mixed 1m/2m/4m foundation rows span
+      their full widths (five tiles / 40m and six tiles / 48m), with a pole
+      and foundry. Designer membership, hidden links, costs, blueprint files,
+      previews and placed actors passed. Mk.2 was placed at 0 degrees and
+      Mk.3 at 37 degrees. Real biomass generators with 100 test-created solid
+      biofuel each supplied the copies through native cables.
+      Separate save PF_LargeBlueprint_20261027_132514 retained both placed
+      blueprints, generators, fuel and cables. After a full restart, saved
+      actor identities, classes, transforms, blueprint proxy references and
+      stable power components survived. Every floor and foundry had power;
+      adjacent links, energized rims and cable endpoints were correct. No
+      refill, synthetic power source, or manual graph rebuild was applied
+      after reload. Circuits remained separate. Disconnecting each cable
+      removed floor/machine power; reconnecting restored it.
+      Every player inventory slot/count remained unchanged. Runtime fixtures
+      were cleaned up; the separate save, manifest and both Blueprint files
+      were retained. No additional gameplay fix was needed.
+      This covers full-width rows, not maximum-volume filled Designers,
+      nested blueprints, manual menu input or multiplayer save behavior.
+
+PASS: 68 snapped-blueprint placement/save checks and 152 fresh-process reload
+      checks on 2026-10-27. Zero failures in the final runs. Two five-tile Mk.2
+      copies at 0 degrees and two six-tile Mk.3 copies at 37 degrees snapped
+      end to end through native blueprint mode and TrySnapToActor. Full-width
+      native bounds, touching foundation side faces, distinct proxies and
+      exactly one hidden connection crossing each pair's boundary passed.
+      One ordinary fueled biomass generator and one cable per pair powered
+      both copies' floors, foundries, poles and energized rims. The second
+      copy had no generator or feed cable; the two test pairs stayed isolated.
+      Save PF_SnappedBlueprint_20261027_135426 survived a full game restart.
+      All saved actor identities, transforms, proxies, power components and
+      fuel survived. Cross-blueprint links and power returned automatically,
+      without refilling fuel, injecting power or manually rebuilding links.
+      Disconnecting each sole feed shut down both copies; reconnecting it
+      restored power across the boundary. Every player inventory slot/count
+      remained unchanged. Runtime fixtures were cleaned up and a separate
+      test save, manifest and reports retained.
+      Initial harness runs used default snap bounds because the descriptor
+      was set after BeginPlay. The harness now sets it in the native pre-spawn
+      callback and checks real bounds before snapping. No gameplay fix was
+      needed. Coverage is native end-to-end snapping with a supplied proxy
+      face hit, not manual menu input, every face or arbitrary blueprint layouts.
+
+PASS: 258 whole-blueprint dismantle/refund checks on 2026-10-27. Zero failures
+      in the final run. Fresh Mk.2 (five tiles, yaw 0) and Mk.3 (six tiles,
+      yaw 37) pairs were snapped natively and fed by one real fueled generator
+      per pair. Removing the unfed copy via Server_DismantleActors preserved
+      the fed survivor's proxy, members, transforms, internal hidden links,
+      feed cable, power and rims. No stale links to removed copies remained.
+      Fresh pairs then tested removing the fed copy. Its dependent cable was
+      removed, its generator survived, and the remaining copy lost power
+      while retaining its internal links. Replacement cables restored power
+      to every remaining floor, foundry and pole, including energized rims.
+      Whole-blueprint refunds matched complete native hologram costs and
+      saved blueprint costs, including all extra foundation wire. Combined
+      refunds for one Mk.2 and one Mk.3 copy were 97 concrete, 74 wire,
+      22 iron plates, 2 iron rods, 20 modular frames and 20 rotors. Removing
+      the fed copies also refunded 6 cable from the dependent feed lines.
+      Exact inventory deltas passed with no missing or duplicate items;
+      free-build refund queries returned no construction materials.
+      The first harness run omitted attached cables from its aggregate
+      comparison; native pole refunds already include them. Accounting was
+      corrected and the complete test rerun. No gameplay fix was needed.
+      All temporary refunds and fixtures were removed, every inventory slot
+      was restored, and no test save was requested. Coverage uses native
+      whole-blueprint dismantle requests with available inventory room, not
+      manual menu selection or whole-blueprint overflow crates.
+
+PASS: 102 whole-blueprint full-inventory overflow/save checks and 29 fresh-
+      process crate reload checks on 2026-10-27. Zero failures in final runs.
+      The powered Mk.2 and Mk.3 copies were removed through native whole-
+      blueprint dismantle requests. Every inventory slot was filled with
+      temporary additions; no refund ingredient could fit, and no refund
+      entered inventory. Each blueprint produced one native dismantle crate.
+      Complete blueprint costs, including extra foundation wire and the
+      dependent feed cable, matched crate contents exactly. Mk.2 contained
+      46 concrete, 31 wire, 10 iron plates, 1 iron rod, 10 modular frames,
+      10 rotors and 3 cable. Mk.3 contained 51 concrete, 43 wire, 12 iron
+      plates, 1 iron rod, 10 modular frames, 10 rotors and 3 cable.
+      Every original inventory slot was restored before writing the separate
+      save PF_BlueprintOverflow_20261027_142031. A full game restart retained
+      both crates exactly once, with their original classes, types, positions
+      and every item quantity. All saved refunds were collectible through
+      native inventory transfer; emptied crates contained no residual or
+      duplicate materials. Test-only collected items were removed and every
+      original inventory slot was restored again. Runtime fixtures/crates
+      were cleaned up; the evidence save, manifest and reports were retained.
+      An initial harness check ran before deferred proxy removal completed;
+      the test now waits four seconds before checking removal and saving.
+      No gameplay fix was needed. This uses native handlers rather than
+      manual dismantle/collection menus and covers two mixed-height layouts.
+
+PASS: 120 whole-blueprint partial-inventory split/save checks and 28 fresh-
+      process reload checks on 2026-10-27. Zero failures in final runs.
+      Native whole-blueprint dismantling removed powered Mk.2 and Mk.3 copies
+      with exact partial-stack capacities. All seven ingredients were checked
+      against complete blueprint costs and dependent feed cable refunds.
+      Cases included ingredients that fitted fully, partly or not at all.
+      Mk.2 inventory/crate portions were: concrete 7/39, wire 0/31, iron
+      plates 10/0, iron rods 0/1, modular frames 3/7, rotors 10/0, cable 1/2.
+      Mk.3 portions were: concrete 0/51, wire 13/30, iron plates 4/8, iron
+      rods 1/0, modular frames 10/0, rotors 0/10, cable 3/0. Each blueprint
+      produced one native dismantle crate. No ingredient was lost or doubled.
+      Temporary filler was removed before writing the separate evidence save
+      PF_BlueprintPartial_20261027_143423; received native refunds remained
+      in inventory and overflow remained in the uncollected crates.
+      A full game restart preserved every inventory slot and both crate
+      identities, classes, types, positions and exact quantities. Inventory
+      plus crates still equalled the complete combined refunds. All overflow
+      was collectible through native transfer, with no residual materials.
+      Test-only items and fixtures were removed after each stage and every
+      original inventory slot restored. The original Trapper autosave stayed
+      byte-for-byte unchanged. Reports, manifest and evidence save retained.
+      An initial harness comparison reused an inventory snapshot array;
+      clearing it before the second read fixed the test comparison. The
+      actual native split already matched. No gameplay change was needed.
+      Coverage invokes native handlers, not manual dismantle/collection menus.
+
+PASS: 129 multi-blueprint partial-inventory dismantle/save checks and 23
+      fresh-process reload checks on 2026-10-27. Zero runtime test failures.
+      One native Server_DismantleActors request selected four distinct proxies:
+      two snapped Mk.2 copies and two snapped Mk.3 copies. It removed all
+      four proxies, their 30 member buildings and two dependent feed cables.
+      Complete hologram costs matched each saved blueprint, including extra
+      foundation wire. Native cable refunds were counted exactly once.
+      Combined inventory/crate portions were: concrete 53/141, wire 0/148,
+      iron plates 44/0, iron rods 1/3, modular frames 13/27, rotors 40/0,
+      cable 4/2. Exact ingredient capacities were checked before the request.
+      One shared native dismantle crate held the entire overflow; every
+      ingredient was conserved across inventory and crate without duplication.
+      Temporary filler was removed before the separate persistence save
+      PF_BlueprintMultiPartial_20261027_144525. Actual received refunds stayed
+      in inventory and overflow remained uncollected in the saved crate.
+      Full game restart preserved every saved inventory slot, crate identity,
+      class, type, location and item count. All 36 dismantled actors remained
+      absent. Native collection delivered every remaining item with no
+      residual crate contents. Test refunds were removed and all original
+      inventory slots restored after each stage. Original Trapper autosave
+      remained byte-for-byte unchanged. Evidence save and reports retained.
+      This exercises the native multi-selection handler rather than manually
+      selecting proxies in the dismantle UI. No gameplay change was needed.
+
+PASS: 129 multi-blueprint full-inventory dismantle/save checks and 25 fresh-
+      process reload checks on 2026-10-27. Zero failures in both runtime runs.
+      Every inventory slot was filled to its exact item capacity, with no
+      room for even one of any of the seven refund ingredients. A single
+      native request dismantled four distinct blueprint proxies: two snapped
+      Mk.2 copies and two snapped Mk.3 copies. All 30 member buildings and
+      both dependent feed cables were removed. Every full inventory slot
+      stayed unchanged; zero refund items entered inventory.
+      One shared native dismantle crate contained all 476 refund items:
+      194 concrete, 148 wire, 44 iron plates, 4 iron rods, 40 modular frames,
+      40 rotors and 6 cable. Counts matched complete construction costs and
+      saved blueprint costs, including extra foundation wire and each feed
+      cable exactly once. No materials were missing or duplicated.
+      Temporary filler was removed before writing the separate evidence save
+      PF_BlueprintMultiOverflow_20261027_145236 with all refunds uncollected.
+      A full game restart preserved the crate exactly once, with its class,
+      type, location and every item count intact. All four proxies, their
+      members and cables remained absent. Every refund was collectible through
+      native inventory transfer, leaving no residual or duplicate materials.
+      Test-only refunds and fixtures were cleaned up and every original
+      inventory slot restored. The normal Trapper autosave remained byte-for-
+      byte unchanged. Evidence save, manifest and reports were retained.
+      This uses the native multi-selection handler rather than manual UI
+      selection. No gameplay change was needed.
+
+PASS: 893 dense/nested Blueprint Designer checks and 52 fresh-process reload
+      checks on 2026-10-27, with zero failures in both runs. Native Mk.1,
+      Mk.2 and Mk.3 Designer volumes were filled with 128, 250 and 432 4m
+      foundations respectively, spanning every width/depth position and
+      8/10/12 vertical layers. All horizontal neighbor edges connected,
+      while touching vertical layers remained electrically isolated.
+      Saved costs included every foundation and its extra wire. Native
+      blueprint previews and placed copies retained all children, costs,
+      stable power components and correct proxy ownership, including a
+      37-degree rotated Mk.2 copy. Real biomass generators and native cables
+      powered only the top layer of each copy.
+      A full-volume Mk.1 blueprint was placed into a Mk.3 Designer using
+      native permitted placement, saved through that Designer, then placed
+      at 90 degrees with exactly 128 children and no duplicate costs.
+      Separate save PF_DenseBlueprint_20261027_154516 retained 938 total
+      dense/nested foundations and nine feed actors. A complete game restart
+      preserved identities, classes, transforms, proxies, inventory and
+      generator fuel. All grid edges and layer isolation survived; removing
+      and reconnecting each feed produced the expected off/on states.
+      Temporary runtime fixtures were removed after both stages and every
+      original inventory slot stayed unchanged. Reports and manifest retained.
+      These checks use native construction/save handlers, not manual preview
+      rendering or UI selection. No gameplay change was needed.
+
+PASS: 249 extended native checks on 2026-10-27, zero failures in the completed
+      run. All six vanilla wall outlet variants (single/double Mk.1/Mk.2/Mk.3)
+      attached on 1m/2m/4m supports at 0 and 90 degrees, supplied their floors,
+      and detached when their mounting walls were removed. Constructor,
+      Manufacturer, Oil Refinery, Packager, Blender, Converter and Power
+      Storage attached and received floor power, then dropped floor links
+      when supports were removed. Ordinary and Priority Power Switches were
+      not bypassed by hidden floor connections.
+      A 32x32 grid connected all 1,024 tiles through 1,984 horizontal edges.
+      Removing a full column split power correctly; rebuilding it restored
+      the grid. The full grid then completed exactly 1,800 seconds of soak
+      with 59 samples and repeated feed disconnections/reconnections.
+      Across 360 full reconciliations, mean duration was 15.119ms and the
+      maximum observed reconciliation was 18.612ms.
+      Before adding the grid, six baseline reconciliations averaged 12.294ms
+      in the existing factory. Whole-process working
+      set was 5,174.5MiB at soak start and 5,148.6MiB at the end; peak sampled
+      working set across setup and soak was 5,226.3MiB. These are local
+      measurements on this existing factory, not frame-time guarantees or
+      evidence of unlimited grid scalability. Heavy builds/server loads were
+      kept off the machine during sampling.
+      Original inventory remained identical and temporary runtime fixtures
+      were removed. The first run passed its gameplay checks but crashed in
+      the QA report writer after clearing the timer's last owning reference.
+      Holding that reference through completion and writing before clearing
+      the timer fixed the harness; the complete 30-minute rerun finished,
+      wrote its report and left the game running normally. No gameplay
+      behavior was changed by that repair.
+
+PASS: Windows dedicated-server package built against the matching CL513885
+      server and SML 3.12.0. Both modules loaded, and 20 native core checks
+      passed with zero failures in a separate PF_Network_QA_20261027 world.
+      Coverage includes mixed-height side connections, diagonal isolation,
+      machine support, grid split/rejoin, multiple feeds, feed removal and
+      mounting-wall removal. Test fixtures were cleaned up before the
+      separate PF_Network_QA_Ready save. Listening TCP/UDP sockets were bound
+      to 127.0.0.1. Client replication was tested separately below.
+
+PASS: 17 authoritative server checks and six independently acknowledged
+      client phases on the same computer, with zero server failures. A real
+      biomass generator and native cable supplied a 1m/2m/4m foundation row.
+      The connected Steam client verified replicated actors were not locally
+      authoritative, retained stable power components, and displayed the
+      expected energized/unpowered material colors. Both processes agreed
+      through initial power, removal of the middle tile and isolation of the
+      far tile, rebuilding the middle, disconnecting the feed, restoring the
+      feed, and removal of all three test tiles. The client stayed nearby
+      during removal so disappearance was not caused by distance culling.
+      A separate temporary standing platform was removed after the client
+      acknowledged the final phase. Player inventory stayed identical and
+      the test returned the player to the original position.
+      The HTTPS API was verified against a locally generated certificate;
+      authenticated join tickets and the native game encryption interface
+      were used. Direct-IP joining without a token was rejected as expected.
+      A documentation discrepancy in Steam identifier byte order was fixed
+      in the QA helper using the native login record. No authentication,
+      transport encryption, Windows firewall, or system trust settings were
+      disabled. Shared local files coordinated test phases only; the client
+      assertions read actual replicated game objects and material state.
+      This covers a localhost dedicated server and one client, not WAN
+      latency, packet loss, multiple remote players, or console clients.
+      Construction/removal was initiated by the server harness. Dedicated-
+      server blueprint/refund workflows and client-issued build/dismantle
+      requests were not separately exercised by this network smoke test.
+
+Not verified: remote multiplayer conditions or the additional network
+workflows described above,
+arbitrary third-party machines, multi-hour normal play or grids beyond 1,024 tiles. Retaining
+actors and individual meshes costs more than vanilla lightweight foundations.
+This is a local beta, not a publicly released or comprehensively certified mod.

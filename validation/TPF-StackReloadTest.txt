@@ -1,0 +1,318 @@
+PASS: All saved fixture actors survived fresh load
+PASS: Default 1m/2m/1m fixtures available
+PASS: Default 2m/4m/1m fixtures available
+PASS: Default 4m/1m/1m fixtures available
+PASS: Concrete 1m/2m/1m fixtures available
+PASS: Concrete 2m/4m/1m fixtures available
+PASS: Concrete 4m/1m/1m fixtures available
+PASS: PolishedConcrete 1m/2m/1m fixtures available
+PASS: PolishedConcrete 2m/4m/1m fixtures available
+PASS: PolishedConcrete 4m/1m/1m fixtures available
+PASS: Asphalt 1m/2m/1m fixtures available
+PASS: Asphalt 2m/4m/1m fixtures available
+PASS: Asphalt 4m/1m/1m fixtures available
+PASS: GripMetal 1m/2m/1m fixtures available
+PASS: GripMetal 2m/4m/1m fixtures available
+PASS: GripMetal 4m/1m/1m fixtures available
+PASS: Default 1m/2m/1m lower feed and indicators stay powered
+PASS: Default 1m/2m/1m upper tier power and indicator match contact
+PASS: Default 1m/2m/1m circuit joins/splits across middle block
+PASS: Default 1m/2m/1m upper side branch and machine receive correct power
+PASS: Default 1m/2m/1m two centimeter vertical gap stays isolated
+PASS: Default 1m/2m/1m vertical corner-only contact stays isolated
+PASS: Default 1m/2m/1m both vertical contacts have native hidden links
+PASS: Default 2m/4m/1m lower feed and indicators stay powered
+PASS: Default 2m/4m/1m upper tier power and indicator match contact
+PASS: Default 2m/4m/1m circuit joins/splits across middle block
+PASS: Default 2m/4m/1m upper side branch and machine receive correct power
+PASS: Default 2m/4m/1m two centimeter vertical gap stays isolated
+PASS: Default 2m/4m/1m vertical corner-only contact stays isolated
+PASS: Default 2m/4m/1m both vertical contacts have native hidden links
+PASS: Default 4m/1m/1m lower feed and indicators stay powered
+PASS: Default 4m/1m/1m upper tier power and indicator match contact
+PASS: Default 4m/1m/1m circuit joins/splits across middle block
+PASS: Default 4m/1m/1m upper side branch and machine receive correct power
+PASS: Default 4m/1m/1m two centimeter vertical gap stays isolated
+PASS: Default 4m/1m/1m vertical corner-only contact stays isolated
+PASS: Default 4m/1m/1m both vertical contacts have native hidden links
+PASS: Concrete 1m/2m/1m lower feed and indicators stay powered
+PASS: Concrete 1m/2m/1m upper tier power and indicator match contact
+PASS: Concrete 1m/2m/1m circuit joins/splits across middle block
+PASS: Concrete 1m/2m/1m upper side branch and machine receive correct power
+PASS: Concrete 1m/2m/1m two centimeter vertical gap stays isolated
+PASS: Concrete 1m/2m/1m vertical corner-only contact stays isolated
+PASS: Concrete 1m/2m/1m both vertical contacts have native hidden links
+PASS: Concrete 2m/4m/1m lower feed and indicators stay powered
+PASS: Concrete 2m/4m/1m upper tier power and indicator match contact
+PASS: Concrete 2m/4m/1m circuit joins/splits across middle block
+PASS: Concrete 2m/4m/1m upper side branch and machine receive correct power
+PASS: Concrete 2m/4m/1m two centimeter vertical gap stays isolated
+PASS: Concrete 2m/4m/1m vertical corner-only contact stays isolated
+PASS: Concrete 2m/4m/1m both vertical contacts have native hidden links
+PASS: Concrete 4m/1m/1m lower feed and indicators stay powered
+PASS: Concrete 4m/1m/1m upper tier power and indicator match contact
+PASS: Concrete 4m/1m/1m circuit joins/splits across middle block
+PASS: Concrete 4m/1m/1m upper side branch and machine receive correct power
+PASS: Concrete 4m/1m/1m two centimeter vertical gap stays isolated
+PASS: Concrete 4m/1m/1m vertical corner-only contact stays isolated
+PASS: Concrete 4m/1m/1m both vertical contacts have native hidden links
+PASS: PolishedConcrete 1m/2m/1m lower feed and indicators stay powered
+PASS: PolishedConcrete 1m/2m/1m upper tier power and indicator match contact
+PASS: PolishedConcrete 1m/2m/1m circuit joins/splits across middle block
+PASS: PolishedConcrete 1m/2m/1m upper side branch and machine receive correct power
+PASS: PolishedConcrete 1m/2m/1m two centimeter vertical gap stays isolated
+PASS: PolishedConcrete 1m/2m/1m vertical corner-only contact stays isolated
+PASS: PolishedConcrete 1m/2m/1m both vertical contacts have native hidden links
+PASS: PolishedConcrete 2m/4m/1m lower feed and indicators stay powered
+PASS: PolishedConcrete 2m/4m/1m upper tier power and indicator match contact
+PASS: PolishedConcrete 2m/4m/1m circuit joins/splits across middle block
+PASS: PolishedConcrete 2m/4m/1m upper side branch and machine receive correct power
+PASS: PolishedConcrete 2m/4m/1m two centimeter vertical gap stays isolated
+PASS: PolishedConcrete 2m/4m/1m vertical corner-only contact stays isolated
+PASS: PolishedConcrete 2m/4m/1m both vertical contacts have native hidden links
+PASS: PolishedConcrete 4m/1m/1m lower feed and indicators stay powered
+PASS: PolishedConcrete 4m/1m/1m upper tier power and indicator match contact
+PASS: PolishedConcrete 4m/1m/1m circuit joins/splits across middle block
+PASS: PolishedConcrete 4m/1m/1m upper side branch and machine receive correct power
+PASS: PolishedConcrete 4m/1m/1m two centimeter vertical gap stays isolated
+PASS: PolishedConcrete 4m/1m/1m vertical corner-only contact stays isolated
+PASS: PolishedConcrete 4m/1m/1m both vertical contacts have native hidden links
+PASS: Asphalt 1m/2m/1m lower feed and indicators stay powered
+PASS: Asphalt 1m/2m/1m upper tier power and indicator match contact
+PASS: Asphalt 1m/2m/1m circuit joins/splits across middle block
+PASS: Asphalt 1m/2m/1m upper side branch and machine receive correct power
+PASS: Asphalt 1m/2m/1m two centimeter vertical gap stays isolated
+PASS: Asphalt 1m/2m/1m vertical corner-only contact stays isolated
+PASS: Asphalt 1m/2m/1m both vertical contacts have native hidden links
+PASS: Asphalt 2m/4m/1m lower feed and indicators stay powered
+PASS: Asphalt 2m/4m/1m upper tier power and indicator match contact
+PASS: Asphalt 2m/4m/1m circuit joins/splits across middle block
+PASS: Asphalt 2m/4m/1m upper side branch and machine receive correct power
+PASS: Asphalt 2m/4m/1m two centimeter vertical gap stays isolated
+PASS: Asphalt 2m/4m/1m vertical corner-only contact stays isolated
+PASS: Asphalt 2m/4m/1m both vertical contacts have native hidden links
+PASS: Asphalt 4m/1m/1m lower feed and indicators stay powered
+PASS: Asphalt 4m/1m/1m upper tier power and indicator match contact
+PASS: Asphalt 4m/1m/1m circuit joins/splits across middle block
+PASS: Asphalt 4m/1m/1m upper side branch and machine receive correct power
+PASS: Asphalt 4m/1m/1m two centimeter vertical gap stays isolated
+PASS: Asphalt 4m/1m/1m vertical corner-only contact stays isolated
+PASS: Asphalt 4m/1m/1m both vertical contacts have native hidden links
+PASS: GripMetal 1m/2m/1m lower feed and indicators stay powered
+PASS: GripMetal 1m/2m/1m upper tier power and indicator match contact
+PASS: GripMetal 1m/2m/1m circuit joins/splits across middle block
+PASS: GripMetal 1m/2m/1m upper side branch and machine receive correct power
+PASS: GripMetal 1m/2m/1m two centimeter vertical gap stays isolated
+PASS: GripMetal 1m/2m/1m vertical corner-only contact stays isolated
+PASS: GripMetal 1m/2m/1m both vertical contacts have native hidden links
+PASS: GripMetal 2m/4m/1m lower feed and indicators stay powered
+PASS: GripMetal 2m/4m/1m upper tier power and indicator match contact
+PASS: GripMetal 2m/4m/1m circuit joins/splits across middle block
+PASS: GripMetal 2m/4m/1m upper side branch and machine receive correct power
+PASS: GripMetal 2m/4m/1m two centimeter vertical gap stays isolated
+PASS: GripMetal 2m/4m/1m vertical corner-only contact stays isolated
+PASS: GripMetal 2m/4m/1m both vertical contacts have native hidden links
+PASS: GripMetal 4m/1m/1m lower feed and indicators stay powered
+PASS: GripMetal 4m/1m/1m upper tier power and indicator match contact
+PASS: GripMetal 4m/1m/1m circuit joins/splits across middle block
+PASS: GripMetal 4m/1m/1m upper side branch and machine receive correct power
+PASS: GripMetal 4m/1m/1m two centimeter vertical gap stays isolated
+PASS: GripMetal 4m/1m/1m vertical corner-only contact stays isolated
+PASS: GripMetal 4m/1m/1m both vertical contacts have native hidden links
+PASS: Default 1m/2m/1m lower feed and indicators stay powered
+PASS: Default 1m/2m/1m upper tier power and indicator match contact
+PASS: Default 1m/2m/1m circuit joins/splits across middle block
+PASS: Default 1m/2m/1m upper side branch and machine receive correct power
+PASS: Default 1m/2m/1m two centimeter vertical gap stays isolated
+PASS: Default 1m/2m/1m vertical corner-only contact stays isolated
+PASS: Default 2m/4m/1m lower feed and indicators stay powered
+PASS: Default 2m/4m/1m upper tier power and indicator match contact
+PASS: Default 2m/4m/1m circuit joins/splits across middle block
+PASS: Default 2m/4m/1m upper side branch and machine receive correct power
+PASS: Default 2m/4m/1m two centimeter vertical gap stays isolated
+PASS: Default 2m/4m/1m vertical corner-only contact stays isolated
+PASS: Default 4m/1m/1m lower feed and indicators stay powered
+PASS: Default 4m/1m/1m upper tier power and indicator match contact
+PASS: Default 4m/1m/1m circuit joins/splits across middle block
+PASS: Default 4m/1m/1m upper side branch and machine receive correct power
+PASS: Default 4m/1m/1m two centimeter vertical gap stays isolated
+PASS: Default 4m/1m/1m vertical corner-only contact stays isolated
+PASS: Concrete 1m/2m/1m lower feed and indicators stay powered
+PASS: Concrete 1m/2m/1m upper tier power and indicator match contact
+PASS: Concrete 1m/2m/1m circuit joins/splits across middle block
+PASS: Concrete 1m/2m/1m upper side branch and machine receive correct power
+PASS: Concrete 1m/2m/1m two centimeter vertical gap stays isolated
+PASS: Concrete 1m/2m/1m vertical corner-only contact stays isolated
+PASS: Concrete 2m/4m/1m lower feed and indicators stay powered
+PASS: Concrete 2m/4m/1m upper tier power and indicator match contact
+PASS: Concrete 2m/4m/1m circuit joins/splits across middle block
+PASS: Concrete 2m/4m/1m upper side branch and machine receive correct power
+PASS: Concrete 2m/4m/1m two centimeter vertical gap stays isolated
+PASS: Concrete 2m/4m/1m vertical corner-only contact stays isolated
+PASS: Concrete 4m/1m/1m lower feed and indicators stay powered
+PASS: Concrete 4m/1m/1m upper tier power and indicator match contact
+PASS: Concrete 4m/1m/1m circuit joins/splits across middle block
+PASS: Concrete 4m/1m/1m upper side branch and machine receive correct power
+PASS: Concrete 4m/1m/1m two centimeter vertical gap stays isolated
+PASS: Concrete 4m/1m/1m vertical corner-only contact stays isolated
+PASS: PolishedConcrete 1m/2m/1m lower feed and indicators stay powered
+PASS: PolishedConcrete 1m/2m/1m upper tier power and indicator match contact
+PASS: PolishedConcrete 1m/2m/1m circuit joins/splits across middle block
+PASS: PolishedConcrete 1m/2m/1m upper side branch and machine receive correct power
+PASS: PolishedConcrete 1m/2m/1m two centimeter vertical gap stays isolated
+PASS: PolishedConcrete 1m/2m/1m vertical corner-only contact stays isolated
+PASS: PolishedConcrete 2m/4m/1m lower feed and indicators stay powered
+PASS: PolishedConcrete 2m/4m/1m upper tier power and indicator match contact
+PASS: PolishedConcrete 2m/4m/1m circuit joins/splits across middle block
+PASS: PolishedConcrete 2m/4m/1m upper side branch and machine receive correct power
+PASS: PolishedConcrete 2m/4m/1m two centimeter vertical gap stays isolated
+PASS: PolishedConcrete 2m/4m/1m vertical corner-only contact stays isolated
+PASS: PolishedConcrete 4m/1m/1m lower feed and indicators stay powered
+PASS: PolishedConcrete 4m/1m/1m upper tier power and indicator match contact
+PASS: PolishedConcrete 4m/1m/1m circuit joins/splits across middle block
+PASS: PolishedConcrete 4m/1m/1m upper side branch and machine receive correct power
+PASS: PolishedConcrete 4m/1m/1m two centimeter vertical gap stays isolated
+PASS: PolishedConcrete 4m/1m/1m vertical corner-only contact stays isolated
+PASS: Asphalt 1m/2m/1m lower feed and indicators stay powered
+PASS: Asphalt 1m/2m/1m upper tier power and indicator match contact
+PASS: Asphalt 1m/2m/1m circuit joins/splits across middle block
+PASS: Asphalt 1m/2m/1m upper side branch and machine receive correct power
+PASS: Asphalt 1m/2m/1m two centimeter vertical gap stays isolated
+PASS: Asphalt 1m/2m/1m vertical corner-only contact stays isolated
+PASS: Asphalt 2m/4m/1m lower feed and indicators stay powered
+PASS: Asphalt 2m/4m/1m upper tier power and indicator match contact
+PASS: Asphalt 2m/4m/1m circuit joins/splits across middle block
+PASS: Asphalt 2m/4m/1m upper side branch and machine receive correct power
+PASS: Asphalt 2m/4m/1m two centimeter vertical gap stays isolated
+PASS: Asphalt 2m/4m/1m vertical corner-only contact stays isolated
+PASS: Asphalt 4m/1m/1m lower feed and indicators stay powered
+PASS: Asphalt 4m/1m/1m upper tier power and indicator match contact
+PASS: Asphalt 4m/1m/1m circuit joins/splits across middle block
+PASS: Asphalt 4m/1m/1m upper side branch and machine receive correct power
+PASS: Asphalt 4m/1m/1m two centimeter vertical gap stays isolated
+PASS: Asphalt 4m/1m/1m vertical corner-only contact stays isolated
+PASS: GripMetal 1m/2m/1m lower feed and indicators stay powered
+PASS: GripMetal 1m/2m/1m upper tier power and indicator match contact
+PASS: GripMetal 1m/2m/1m circuit joins/splits across middle block
+PASS: GripMetal 1m/2m/1m upper side branch and machine receive correct power
+PASS: GripMetal 1m/2m/1m two centimeter vertical gap stays isolated
+PASS: GripMetal 1m/2m/1m vertical corner-only contact stays isolated
+PASS: GripMetal 2m/4m/1m lower feed and indicators stay powered
+PASS: GripMetal 2m/4m/1m upper tier power and indicator match contact
+PASS: GripMetal 2m/4m/1m circuit joins/splits across middle block
+PASS: GripMetal 2m/4m/1m upper side branch and machine receive correct power
+PASS: GripMetal 2m/4m/1m two centimeter vertical gap stays isolated
+PASS: GripMetal 2m/4m/1m vertical corner-only contact stays isolated
+PASS: GripMetal 4m/1m/1m lower feed and indicators stay powered
+PASS: GripMetal 4m/1m/1m upper tier power and indicator match contact
+PASS: GripMetal 4m/1m/1m circuit joins/splits across middle block
+PASS: GripMetal 4m/1m/1m upper side branch and machine receive correct power
+PASS: GripMetal 4m/1m/1m two centimeter vertical gap stays isolated
+PASS: GripMetal 4m/1m/1m vertical corner-only contact stays isolated
+PASS: Default 1m/2m/1m lower feed and indicators stay powered
+PASS: Default 1m/2m/1m upper tier power and indicator match contact
+PASS: Default 1m/2m/1m circuit joins/splits across middle block
+PASS: Default 1m/2m/1m upper side branch and machine receive correct power
+PASS: Default 1m/2m/1m two centimeter vertical gap stays isolated
+PASS: Default 1m/2m/1m vertical corner-only contact stays isolated
+PASS: Default 1m/2m/1m both vertical contacts have native hidden links
+PASS: Default 2m/4m/1m lower feed and indicators stay powered
+PASS: Default 2m/4m/1m upper tier power and indicator match contact
+PASS: Default 2m/4m/1m circuit joins/splits across middle block
+PASS: Default 2m/4m/1m upper side branch and machine receive correct power
+PASS: Default 2m/4m/1m two centimeter vertical gap stays isolated
+PASS: Default 2m/4m/1m vertical corner-only contact stays isolated
+PASS: Default 2m/4m/1m both vertical contacts have native hidden links
+PASS: Default 4m/1m/1m lower feed and indicators stay powered
+PASS: Default 4m/1m/1m upper tier power and indicator match contact
+PASS: Default 4m/1m/1m circuit joins/splits across middle block
+PASS: Default 4m/1m/1m upper side branch and machine receive correct power
+PASS: Default 4m/1m/1m two centimeter vertical gap stays isolated
+PASS: Default 4m/1m/1m vertical corner-only contact stays isolated
+PASS: Default 4m/1m/1m both vertical contacts have native hidden links
+PASS: Concrete 1m/2m/1m lower feed and indicators stay powered
+PASS: Concrete 1m/2m/1m upper tier power and indicator match contact
+PASS: Concrete 1m/2m/1m circuit joins/splits across middle block
+PASS: Concrete 1m/2m/1m upper side branch and machine receive correct power
+PASS: Concrete 1m/2m/1m two centimeter vertical gap stays isolated
+PASS: Concrete 1m/2m/1m vertical corner-only contact stays isolated
+PASS: Concrete 1m/2m/1m both vertical contacts have native hidden links
+PASS: Concrete 2m/4m/1m lower feed and indicators stay powered
+PASS: Concrete 2m/4m/1m upper tier power and indicator match contact
+PASS: Concrete 2m/4m/1m circuit joins/splits across middle block
+PASS: Concrete 2m/4m/1m upper side branch and machine receive correct power
+PASS: Concrete 2m/4m/1m two centimeter vertical gap stays isolated
+PASS: Concrete 2m/4m/1m vertical corner-only contact stays isolated
+PASS: Concrete 2m/4m/1m both vertical contacts have native hidden links
+PASS: Concrete 4m/1m/1m lower feed and indicators stay powered
+PASS: Concrete 4m/1m/1m upper tier power and indicator match contact
+PASS: Concrete 4m/1m/1m circuit joins/splits across middle block
+PASS: Concrete 4m/1m/1m upper side branch and machine receive correct power
+PASS: Concrete 4m/1m/1m two centimeter vertical gap stays isolated
+PASS: Concrete 4m/1m/1m vertical corner-only contact stays isolated
+PASS: Concrete 4m/1m/1m both vertical contacts have native hidden links
+PASS: PolishedConcrete 1m/2m/1m lower feed and indicators stay powered
+PASS: PolishedConcrete 1m/2m/1m upper tier power and indicator match contact
+PASS: PolishedConcrete 1m/2m/1m circuit joins/splits across middle block
+PASS: PolishedConcrete 1m/2m/1m upper side branch and machine receive correct power
+PASS: PolishedConcrete 1m/2m/1m two centimeter vertical gap stays isolated
+PASS: PolishedConcrete 1m/2m/1m vertical corner-only contact stays isolated
+PASS: PolishedConcrete 1m/2m/1m both vertical contacts have native hidden links
+PASS: PolishedConcrete 2m/4m/1m lower feed and indicators stay powered
+PASS: PolishedConcrete 2m/4m/1m upper tier power and indicator match contact
+PASS: PolishedConcrete 2m/4m/1m circuit joins/splits across middle block
+PASS: PolishedConcrete 2m/4m/1m upper side branch and machine receive correct power
+PASS: PolishedConcrete 2m/4m/1m two centimeter vertical gap stays isolated
+PASS: PolishedConcrete 2m/4m/1m vertical corner-only contact stays isolated
+PASS: PolishedConcrete 2m/4m/1m both vertical contacts have native hidden links
+PASS: PolishedConcrete 4m/1m/1m lower feed and indicators stay powered
+PASS: PolishedConcrete 4m/1m/1m upper tier power and indicator match contact
+PASS: PolishedConcrete 4m/1m/1m circuit joins/splits across middle block
+PASS: PolishedConcrete 4m/1m/1m upper side branch and machine receive correct power
+PASS: PolishedConcrete 4m/1m/1m two centimeter vertical gap stays isolated
+PASS: PolishedConcrete 4m/1m/1m vertical corner-only contact stays isolated
+PASS: PolishedConcrete 4m/1m/1m both vertical contacts have native hidden links
+PASS: Asphalt 1m/2m/1m lower feed and indicators stay powered
+PASS: Asphalt 1m/2m/1m upper tier power and indicator match contact
+PASS: Asphalt 1m/2m/1m circuit joins/splits across middle block
+PASS: Asphalt 1m/2m/1m upper side branch and machine receive correct power
+PASS: Asphalt 1m/2m/1m two centimeter vertical gap stays isolated
+PASS: Asphalt 1m/2m/1m vertical corner-only contact stays isolated
+PASS: Asphalt 1m/2m/1m both vertical contacts have native hidden links
+PASS: Asphalt 2m/4m/1m lower feed and indicators stay powered
+PASS: Asphalt 2m/4m/1m upper tier power and indicator match contact
+PASS: Asphalt 2m/4m/1m circuit joins/splits across middle block
+PASS: Asphalt 2m/4m/1m upper side branch and machine receive correct power
+PASS: Asphalt 2m/4m/1m two centimeter vertical gap stays isolated
+PASS: Asphalt 2m/4m/1m vertical corner-only contact stays isolated
+PASS: Asphalt 2m/4m/1m both vertical contacts have native hidden links
+PASS: Asphalt 4m/1m/1m lower feed and indicators stay powered
+PASS: Asphalt 4m/1m/1m upper tier power and indicator match contact
+PASS: Asphalt 4m/1m/1m circuit joins/splits across middle block
+PASS: Asphalt 4m/1m/1m upper side branch and machine receive correct power
+PASS: Asphalt 4m/1m/1m two centimeter vertical gap stays isolated
+PASS: Asphalt 4m/1m/1m vertical corner-only contact stays isolated
+PASS: Asphalt 4m/1m/1m both vertical contacts have native hidden links
+PASS: GripMetal 1m/2m/1m lower feed and indicators stay powered
+PASS: GripMetal 1m/2m/1m upper tier power and indicator match contact
+PASS: GripMetal 1m/2m/1m circuit joins/splits across middle block
+PASS: GripMetal 1m/2m/1m upper side branch and machine receive correct power
+PASS: GripMetal 1m/2m/1m two centimeter vertical gap stays isolated
+PASS: GripMetal 1m/2m/1m vertical corner-only contact stays isolated
+PASS: GripMetal 1m/2m/1m both vertical contacts have native hidden links
+PASS: GripMetal 2m/4m/1m lower feed and indicators stay powered
+PASS: GripMetal 2m/4m/1m upper tier power and indicator match contact
+PASS: GripMetal 2m/4m/1m circuit joins/splits across middle block
+PASS: GripMetal 2m/4m/1m upper side branch and machine receive correct power
+PASS: GripMetal 2m/4m/1m two centimeter vertical gap stays isolated
+PASS: GripMetal 2m/4m/1m vertical corner-only contact stays isolated
+PASS: GripMetal 2m/4m/1m both vertical contacts have native hidden links
+PASS: GripMetal 4m/1m/1m lower feed and indicators stay powered
+PASS: GripMetal 4m/1m/1m upper tier power and indicator match contact
+PASS: GripMetal 4m/1m/1m circuit joins/splits across middle block
+PASS: GripMetal 4m/1m/1m upper side branch and machine receive correct power
+PASS: GripMetal 4m/1m/1m two centimeter vertical gap stays isolated
+PASS: GripMetal 4m/1m/1m vertical corner-only contact stays isolated
+PASS: GripMetal 4m/1m/1m both vertical contacts have native hidden links
+PASS: Every original inventory slot is unchanged
+Failures: 0
