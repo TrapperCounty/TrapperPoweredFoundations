@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.5 (unreleased)
+## 0.1.5
 Placing a wall over an outlet mounted on a powered foundation keeps the connected floors powered.
 
 ## 0.1.4

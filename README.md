@@ -2,13 +2,13 @@
 
 Power your factory through physically connected foundations, with red/green corner indicators and customizable finishes.
 
-**Beta 0.1.4** — tested on Windows Steam, Satisfactory CL 513885, SML 3.12.0. Newer builds and untested environments are not automatically verified.
+**Beta 0.1.5** — tested on Windows Steam, Satisfactory CL 513885, SML 3.12.0. Newer builds and untested environments are not automatically verified.
 
 ## Download and install
 
-**[Download 0.1.4 for Windows (Steam / Epic)](https://github.com/TrapperCounty/TrapperPoweredFoundations/releases/download/v0.1.4/TrapperPoweredFoundations-0.1.4-Windows.zip)**
+**[Download 0.1.5 for Windows (Steam / Epic)](https://github.com/TrapperCounty/TrapperPoweredFoundations/releases/download/v0.1.5/TrapperPoweredFoundations-0.1.5-Windows.zip)**
 
-[All release assets](https://github.com/TrapperCounty/TrapperPoweredFoundations/releases/tag/v0.1.4) · [Installation](docs/INSTALLATION.md) · [Player guide](docs/PLAYER-GUIDE.md)
+[All release assets](https://github.com/TrapperCounty/TrapperPoweredFoundations/releases/tag/v0.1.5) · [Installation](docs/INSTALLATION.md) · [Player guide](docs/PLAYER-GUIDE.md)
 
 Use the named Windows ZIP for playing. GitHub's Code / Source code downloads contain development files and will not install the compiled mod. Windows Server has a separate package; Linux is not included. GitHub downloads are available independently of the pending Ficsit.app upload.
 
@@ -27,7 +27,7 @@ Buy the Powered Foundations unlock in the AWESOME Shop for 25 coupons. Recipes r
 
 [Tester checklist](docs/TESTING.md) · [Compatibility and validation](docs/VALIDATION.md) · [Report a bug](https://github.com/TrapperCounty/TrapperPoweredFoundations/issues/new/choose)
 
-Latest stacking validation passed 733 in-game checks and four editor suites. Remote multiplayer, Epic gameplay and dense Designer regressions were not rerun for 0.1.4. Read the coverage limits before choosing a test environment.
+Version 0.1.5 keeps outlets connected when a wall covers their foundation mount. The fix passed 722 gameplay checks and four editor suites, and was confirmed in the original Windows Steam game.
 
 ## Source and development
 
