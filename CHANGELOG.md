@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.5
+Placing a wall over an outlet mounted on a powered foundation keeps the connected floors powered.
+
 ## 0.1.4
 Touching top/bottom faces now conduct power through stacked foundations, including mixed heights and finishes. Gaps and corner-only touches stay isolated. Existing stacks reconnect on load. Updated stacking/reload/vertical-zoop tests.
 

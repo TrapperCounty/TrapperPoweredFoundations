@@ -10,6 +10,9 @@ namespace
     struct FPFSideOutletTest : FPFExtendedTest
     {
         TArray<FPFSideOutletCase> Cases;
+        FPFOutletCase Covered;
+        FPFOutletCase AcrossGap;
+        TWeakObjectPtr<AFGBuildable> UpperTile;
         int32 Step = 0;
 
         void SetupSides()
@@ -17,6 +20,31 @@ namespace
             UFGSaveSession::Get(World.Get())->SetAutoSaveEnabled(false);
             if (auto* PC = World->GetFirstPlayerController()) Player = Cast<AFGCharacterPlayer>(PC->GetPawn());
             if (Player.IsValid()) Player->GetInventory()->GetInventoryStacks(InventoryBefore, true);
+            // Two independent floors joined only by the visible outlet cable (issue #1).
+            Covered.Center = FVector(140000, -40000, 0);
+            Covered.Rotation = FQuat::Identity;
+            Covered.Tile = TileAt(Covered.Center, 2);
+            const FVector Upper = Covered.Center + FVector(0, 0, 1000);
+            UpperTile = TileAt(Upper, 2);
+            const FString OutletPath = TEXT("/Game/FactoryGame/Buildable/Factory/PowerPoleWall/Build_PowerPoleWall");
+            const FVector SideAnchor(370, 200, -100);
+            Covered.Outlet = Spawn(OutletPath, Covered.Center + SideAnchor);
+            auto* UpperOutlet = Spawn(OutletPath, Upper + SideAnchor);
+            auto* Cable = Cast<AFGBuildableWire>(Spawn(TEXT("/Game/FactoryGame/Buildable/Factory/PowerLine/Build_PowerLine"), Covered.Center));
+            Check(Cable && Connection(Covered.Outlet) && Connection(UpperOutlet) &&
+                Cable->Connect(Connection(Covered.Outlet), Connection(UpperOutlet)), TEXT("Connects cable between floors"));
+            auto* FeedPole = Spawn(TEXT("/Game/FactoryGame/Buildable/Factory/PowerPoleMk1/Build_PowerPoleMk1"), Covered.Center);
+            Supply(FeedPole, Covered.Center + FVector(-1600, -1600, 0));
+            // The outlet trace reaches the tile behind this free-standing wall,
+            // but neither the wall nor the outlet actually touches the tile.
+            AcrossGap.Center = Covered.Center + FVector(4000, 0, 0);
+            AcrossGap.Rotation = FQuat::Identity;
+            AcrossGap.Tile = TileAt(AcrossGap.Center, 2);
+            const FVector GapWallBase = AcrossGap.Center + FVector(460, 0, -400);
+            AcrossGap.WallCenter = Origin + GapWallBase + FVector(0, 0, 200);
+            AcrossGap.Wall = Spawn(TEXT("/Game/FactoryGame/Buildable/Building/Wall/Build_Wall_8x4_01"), GapWallBase, true);
+            AcrossGap.Outlet = Spawn(OutletPath, AcrossGap.Center + FVector(460, 0, -100));
+            Supply(AcrossGap.Outlet, AcrossGap.Center + FVector(-1600, -1600, 0));
             const TCHAR* Paths[] = {TEXT("PowerPoleWall/Build_PowerPoleWall"), TEXT("PowerPoleWall/Build_PowerPoleWall_Mk2"), TEXT("PowerPoleWall/Build_PowerPoleWall_Mk3"), TEXT("PowerPoleWallDouble/Build_PowerPoleWallDouble"), TEXT("PowerPoleWallDouble/Build_PowerPoleWallDouble_Mk2"), TEXT("PowerPoleWallDouble/Build_PowerPoleWallDouble_Mk3")};
             for (int32 V = 0; V < 6; ++V) for (int32 H : {1, 2, 4}) for (int32 Side = 0; Side < 4; ++Side)
             {
@@ -73,6 +101,10 @@ namespace
             if (Step++ == 0) { SetupSides(); return; }
             if (Step == 2)
             {
+                Check(Same(Covered.Tile, UpperTile) && Connection(UpperTile)->HasPower(), TEXT("Upper floor receives power before wall placement"));
+                const FVector WallBase = Covered.Center + FVector(400, 0, -400);
+                Covered.WallCenter = Origin + WallBase + FVector(0, 0, 200);
+                Covered.Wall = Spawn(TEXT("/Game/FactoryGame/Buildable/Building/Wall/Build_Wall_8x4_01"), WallBase, true);
                 for (auto& Case : Cases)
                 {
                     Check(Linked(Case) == Case.ShouldConnect, Case.Label + TEXT(" all terminals have expected foundation links"));
@@ -90,6 +122,12 @@ namespace
             }
             if (Step == 3)
             {
+                Check(Connection(Covered.Tile) && Connection(Covered.Tile)->HasPower(), TEXT("Source floor stays powered with covering wall"));
+                Check(Same(Covered.Tile, UpperTile) && Connection(UpperTile)->HasPower(), TEXT("Upper floor stays powered with covering wall"));
+                Check(Connection(AcrossGap.Outlet) && Connection(AcrossGap.Outlet)->HasPower() &&
+                    Connection(AcrossGap.Tile) && !Connection(AcrossGap.Tile)->HasPower(), TEXT("Separate wall outlet cannot feed tile across air gap"));
+                RemoveWall(Covered);
+                RemoveWall(AcrossGap);
                 for (auto& Case : Cases)
                 {
                     Check(Connection(Case.Tile) && !Connection(Case.Tile)->HasPower(), Case.Label + TEXT(" loses power when feed is disconnected"));
@@ -106,6 +144,7 @@ namespace
             }
             if (Step == 4)
             {
+                Check(Same(Covered.Tile, UpperTile) && Connection(UpperTile)->HasPower(), TEXT("Upper floor stays powered after removing covering wall"));
                 for (auto& Case : Cases) if (Case.ShouldConnect)
                 {
                     Check(Connection(Case.Outlet) && Connection(Case.Outlet)->HasPower() && Linked(Case), Case.Label + TEXT(" receives power from floor in reverse direction"));

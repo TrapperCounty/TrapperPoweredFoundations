@@ -139,10 +139,11 @@ namespace
         FCollisionObjectQueryParams Objects;
         Objects.AddObjectTypesToQuery(ECC_WorldStatic);
         Objects.AddObjectTypesToQuery(ECC_WorldDynamic);
+        const FVector Center = Pole->GetActorLocation();
+        TOptional<TArray<FBody>> FirstWall;
         for (FVector Axis : {Pole->GetActorForwardVector(), Pole->GetActorRightVector()})
         {
             TArray<FHitResult> Hits;
-            const FVector Center = Pole->GetActorLocation();
             World->LineTraceMultiByObjectType(Hits, Center + Axis * 100., Center - Axis * 100., Objects, Params);
             for (const auto& Hit : Hits)
             {
@@ -156,18 +157,31 @@ namespace
                     if (auto* Floor = Actor->FindComponentByClass<UPFPowerConnection>())
                         if (FMath::Abs(FVector::DotProduct(Hit.ImpactNormal, Actor->GetActorUpVector())) < .1)
                         {
+                            // A new wall can be the first hit over an existing side outlet.
+                            // Only look past that wall for the tile containing the outlet anchor.
+                            if (FirstWall.IsSet())
+                            {
+                                const auto Tile = Floor->GetTile();
+                                const FBox Bounds = FBox(-Tile.HalfSize, Tile.HalfSize).ExpandBy(PFGeometry::EdgeTolerance);
+                                if (!Bounds.IsInsideOrOn(Tile.Transform.InverseTransformPosition(Center))) continue;
+                            }
                             DirectFloor = Floor;
                             return {};
                         }
-                if (auto* Wall = Cast<AFGBuildableWall>(Surface)) return Bodies(Wall, Wall->GetActorTransform());
+                if (FirstWall.IsSet()) continue;
+                if (auto* Wall = Cast<AFGBuildableWall>(Surface))
+                {
+                    FirstWall = Bodies(Wall, Wall->GetActorTransform());
+                    continue;
+                }
                 FLightweightBuildableInstanceRef Ref;
                 if (InstanceHit &&
                     AFGLightweightBuildableSubsystem::ResolveLightweightInstance(Handle, Ref) &&
                     Ref.GetBuildableClass() && Ref.GetBuildableClass()->IsChildOf(AFGBuildableWall::StaticClass()))
-                    return Bodies(Ref.GetBuildableClass()->GetDefaultObject<AFGBuildableWall>(), Ref.GetBuildableTransform());
+                    FirstWall = Bodies(Ref.GetBuildableClass()->GetDefaultObject<AFGBuildableWall>(), Ref.GetBuildableTransform());
             }
         }
-        return {};
+        return FirstWall.IsSet() ? MoveTemp(FirstWall.GetValue()) : TArray<FBody>{};
     }
 }
 
